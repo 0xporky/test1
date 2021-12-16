@@ -12,7 +12,13 @@
     <title>Test app</title>
   </head>
   <body>
-    <select>
+    <script>
+      function onMouseDown(e) {
+        let el = document.getElementById('sel');
+        el.innerHTML = `<option>Test 5/option>`;
+      }
+    </script>
+    <select id="sel">
       <option>Test 1</option>
       <option>Test 2</option>
       <option>Test 3</option>
