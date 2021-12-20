@@ -9,15 +9,22 @@
 
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+       $('#my-select').select2();
+      });
+    </script>
     <title>Test app</title>
   </head>
   <body>
-    <input list="states" />
-    <datalist id="states">
+    <select id="my-select">
       <option>Test 1</option>
       <option>Test 2</option>
       <option>Test 3</option>
       <option>Test 4</option>
-    </datalist>
+    </select>  
   </body>
 </html>
